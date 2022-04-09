@@ -1,7 +1,6 @@
 $(document).ready(function () {
     let img=document.createElement("img");
-    $(img).css("max-width","690px");
-    $(img).css("max-height","400px");
+    $(img).css("width","108%");
     $(img).css("border","2px solid");
     $(img).css("border-image","linear-gradient(45deg,rgb(55, 217, 168), rgb(25, 92, 89)) 10");
     let ide=document.getElementById("ide");
@@ -12,5 +11,3 @@ $(document).ready(function () {
     img.src=images[random];
 },500);
 });
-
-
