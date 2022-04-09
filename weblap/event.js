@@ -1,7 +1,6 @@
 $(document).ready(function () {
     let img=document.createElement("img");
     $(img).css("width","108%");
-    $(img).css("padding","10px");
     $(img).css("min-width","354px");
     $(img).css("min-height","199px");
     $(img).css("height","100%");
