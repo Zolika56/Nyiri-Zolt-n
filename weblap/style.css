@@ -14,10 +14,7 @@ body{
 }
 .szinez{
 	background-color: black;
-	border-bottom: 2px solid;
-	border-left: 2px solid;
-	border-right: 2px solid;
-	border-image: linear-gradient(45deg,rgb(55, 217, 168), rgb(25, 92, 89)) 10;
+	border-bottom: 2px solid grey;
 }
 a:hover {
 	color:rgb(25, 92, 89) !important;
