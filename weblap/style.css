@@ -1,13 +1,30 @@
 body{	
 	background-image:url("images/kezdolaphatter.jpg");
-	background-repeat: repeat;
+	background-repeat: repeat-y;
 	background-size:cover;
-	background-repeat:no-repeat;
 	font-family: monospace;
 	color: white;
 	font-size: x-large;
-	;
 }
+
+footer {
+	position:fixed;
+	bottom: 0px;
+	width:100%;
+	height:30px;
+	background-color: black;
+	text-align: center;
+	border-top: 1px solid  rgb(25, 92, 89);
+ }
+
+ a:hover {
+	color:rgb(25, 92, 89) !important;
+  }
+
+ul li a.active{
+	background-color:rgb(25, 92, 89);
+  }
+
 .vonal{
 	font-size: xx-large;
 	border-bottom: 1px solid;
@@ -17,18 +34,12 @@ body{
 	background-color: black;
 	border-bottom: 1px solid  rgb(25, 92, 89);
 }
-a:hover {
-	color:rgb(25, 92, 89) !important;
-  }
+
 .dropdown-menu{
 	background-color: rgb(75, 148, 126);
 }
 .dropdown-item:hover{
 	background-color: rgb(75, 148, 126);
-}
-#szoveg{
-	margin-top: 200px;
-	color: white;
 }
 
 .style {
@@ -43,34 +54,57 @@ a:hover {
 	margin-right: 10px;
   }
 
- ul li a.active{
-	background-color:rgb(25, 92, 89);
-  }
-
 .negyzet{
-	width:100px;
-	height: 100px;
+	width:50px;
+	height: 50px;
 	background:black;	
 	border:1px solid  rgb(25, 92, 89);
 	text-align: center;	
-	border-radius: 50%;
+	border-radius: 10%;
 	display:line;
 	margin-top:20px;
-	margin-bottom: 20px;
-	margin:auto;
+	margin-bottom: 10%;
+	background-image: url('images/negyzet.gif');
+	margin-left: 40%;
+}
+
+.anim{
+	animation: animation 0.75s;
+}
+
+.jobb{
 	
+	width: 300px;
+	background-color: black;
+	border: 1px solid;
+	border-image: linear-gradient(45deg,rgb(55, 217, 168), rgb(25, 92, 89)) 10;
+	background-image: url('images/map.gif');
+	
+}
+
+#szoveg{
+	margin-top: 200px;
+	color: white;
 }
 
 #ide{
 	padding:10px;
 }
+#welcome{
+	max-width: 500px;
+	width: 50%;
+	border: 1px solid;
+	border-image: linear-gradient(45deg,rgb(55, 217, 168), rgb(25, 92, 89)) 10;
+}
 
-footer {
-	position:fixed;
-	bottom:0;
-	width:100%;
-	height:30px;   /* Height of the footer */
-	background-color: black;
-	text-align: center;
-	border-top: 1px solid  rgb(25, 92, 89);
- }
+ @keyframes animation {
+	from{
+		opacity: 0;
+		transform: translateY(-10px);
+	}
+	
+	to{
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
