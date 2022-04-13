@@ -33,6 +33,7 @@ ul li a.active{
 .szinez{
 	background-color: black;
 	border-bottom: 1px solid  rgb(25, 92, 89);
+	margin-bottom: 10%;
 }
 
 .dropdown-menu{
