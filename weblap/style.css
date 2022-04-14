@@ -63,9 +63,11 @@ ul li a.active{
 	border-radius: 10%;
 	display:line;
 	margin-top:20px;
-	margin-bottom: 10%;
+	margin-bottom: 10px;
 	background-image: url('images/negyzet.gif');
-	margin-left: 40%;
+	margin-left: 25%;
+	margin-right: 25%;
+	
 }
 
 .anim{
@@ -73,13 +75,16 @@ ul li a.active{
 }
 
 .jobb{
-	
-	width: 300px;
+	width: 50%;
 	background-color: black;
 	border: 1px solid;
 	border-image: linear-gradient(45deg,rgb(55, 217, 168), rgb(25, 92, 89)) 10;
 	background-image: url('images/map.gif');
-	
+	margin-left: 25%;
+	margin-right: 25%;
+	padding: 5px;
+	display: inline-block;
+	margin-right: 10px;
 }
 
 #szoveg{
@@ -108,3 +113,21 @@ ul li a.active{
 		transform: translateY(0);
 	}
 }
+
+@media screen and (min-width: 697px) {
+	div.jobb {
+	  font-size: xx-large;
+	}
+  }
+  
+  /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+  @media screen and (max-width: 696px) {
+	div.jobb {
+	  font-size: x-large;
+	}
+  }
+  @media screen and (max-width: 415px) {
+	div.jobb {
+	  font-size: x-small;
+	}
+  }
