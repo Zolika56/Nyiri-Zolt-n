@@ -1,11 +1,13 @@
 body{	
-	background-image:url("images/kezdolaphatter.jpg");
-	background-repeat: repeat-y;
-	background-size:cover;
+	background-color:  rgb(8, 29, 28);
+	background-repeat: no-repeat;
+	background-position-x: center;
+	background-position-y: center;
 	font-family: 'Patrick Hand SC', cursive;
 	color: white;
-	font-size: x-large;
+	font-size: large;
 }
+
 
 footer {
 	position:fixed;
@@ -34,17 +36,16 @@ ul li a.active{
 	background-color: black;
 	border-bottom: 1px solid  rgb(25, 92, 89);
 }
-
-.dropdown-menu{
-	background-color: rgb(75, 148, 126);
-}
-.dropdown-item:hover{
-	background-color: rgb(75, 148, 126);
+.szinezz{
+	background-color: black;
+	border: 1px solid  rgb(25, 92, 89);
+	width: 250px;
+	padding-right: 30%;
 }
 
 .style {
 	color: #fff;
-	border: 1px solid rgb(25, 92, 89);
+	border: 2px solid rgb(25, 92, 89);
 	height: 25px;
 	width: 25px;
 	display: inline-block;
@@ -70,7 +71,7 @@ ul li a.active{
 }
 
 .anim{
-	animation: animation 0.75s;
+	animation: animation 3s;
 }
 
 .jobb{
@@ -85,31 +86,66 @@ ul li a.active{
 	display: inline-block;
 	margin-right: 10px;
 }
+.meret{
+	width: 100%;
+	max-width: 300px;
+}
+.text{
+	width: 100%;
+	max-width: 250px;
+	background-color: black;
+	border: 1px solid  rgb(25, 92, 89);
+	background-image: url('images/map.gif');
+}
 
+.ul li{
+	list-style: none;
+}
+.ul li:before {
+	content: '';
+	display: inline-block;
+	height: 30px;
+	width: 30px;
+	background-image: url('images/logo.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-left: -35px;
+  }
 #szoveg{
-	margin-top: 200px;
 	color: white;
+	margin-bottom: 5%;
+}
+#szoveg2{
+	color: white;
+	margin-top: 8%;
 }
 
 #ide{
 	padding:10px;
 }
-#welcome{
+#astronaut{
 	max-width: 500px;
-	width: 50%;
+	width: 100%;
 	border: 1px solid;
 	border-image: linear-gradient(45deg,rgb(55, 217, 168), rgb(25, 92, 89)) 10;
+}
+#meretezes{
+	width:100%;
+   
+}
+#balos{
+	text-align: center;
 }
 
  @keyframes animation {
 	from{
 		opacity: 0;
-		transform: translateY(-10px);
+		transform: translateX(-10px);
 	}
 	
 	to{
 		opacity: 1;
-		transform: translateY(0);
+		transform: translateX(0);
 	}
 }
 
