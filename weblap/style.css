@@ -8,7 +8,6 @@ body{
 	font-size: large;
 }
 
-
 footer {
 	position:fixed;
 	bottom: 0px;
@@ -135,6 +134,15 @@ ul li a.active{
 }
 #balos{
 	text-align: center;
+}
+
+#check{
+	margin-top: 5%;
+	margin-bottom: 15%;
+	border: 2px solid white;
+	border-radius: 20%;
+	text-align: center;
+	background-image: url('images/negyzet.gif');
 }
 
  @keyframes animation {
